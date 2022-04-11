@@ -58,7 +58,7 @@ jobs:
 
       - name: Upload sharpmake cross-platform release binaries
         if: runner.os == 'Windows' && matrix.configuration == 'release'
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: 'Sharpmake-${{ github.sha }}'
           path: tmp/bin
